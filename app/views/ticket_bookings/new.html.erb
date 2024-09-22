@@ -1,0 +1,10 @@
+<h1>Book Tickets for <%= @event.name %></h1>
+<%= form_with model: [@event, @ticket_booking], local: true do |f| %>
+  <div>
+    <%= f.label :tickets, 'Number of Tickets' %>
+    <%= f.number_field :tickets %>
+  </div>
+  <div>
+    <%= f.submit 'Book Tickets' %>
+  </div>
+<% end %>
