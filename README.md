@@ -1,25 +1,34 @@
-# README
+# Ticket Booking System
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple event ticketing system built with Ruby on Rails. This system allows users to register, create events, book tickets, and view upcoming events.
 
-Things you may want to cover:
+## Features
 
-* Ruby version
+- **Event Creation**: Admins can create and manage events, including setting dates, descriptions, and ticket availability.
+- **Ticket Booking**: Users can browse available events and book tickets.
+- **Event Listings**: Users can view upcoming events and the details for each event.
 
-* System dependencies
+## Installation
 
-* Configuration
+### Prerequisites
 
-* Database creation
+- Ruby 3.0+
+- Rails 7.0+
+- PostgreSQL
 
-* Database initialization
+### Setup Instructions
 
-* How to run the test suite
+1. Clone the repository:
 
-* Services (job queues, cache servers, search engines, etc.)
+   ```bash
+   git clone git@github.com:clevegomes/ticket_booking_system.git
+   cd ticket_booking_system
+   
+   bundle install
+   rails db:create
+   rails db:migrate
+   rails db:seed
+   
+   rails server
 
-* Deployment instructions
 
-* ...
-# ticket_booking_system
