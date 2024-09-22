@@ -1,0 +1,11 @@
+<h1>All Events</h1>
+<% @events.each do |event| %>
+  <h3><%= event.name %></h3>
+  <p><%= event.description %></p>
+  <p>Location: <%= event.location %></p>
+  <p>Date: <%= event.date %></p>
+  <p>Tickets Left: <%= event.remaining_tickets %></p>
+  <% if user_signed_in? %>
+    <%= link_to 'Book Tickets', new_event_ticket_booking_path(event) %>
+  <% end %>
+<% end %>
